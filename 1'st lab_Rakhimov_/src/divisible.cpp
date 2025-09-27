@@ -15,7 +15,7 @@ int findMaxDivisible(int divider, int bound) {
     int result = (bound / divider) * divider;
 
     if (result <= 0) {
-        throw runtime_error("Результат меньше 0");
+        throw runtime_error("Результат не может быть найден");
     }
     
     return result;

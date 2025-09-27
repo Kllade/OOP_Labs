@@ -35,8 +35,8 @@ TEST(FindMaxDivisibleTest, DividerIsOne) {
 
 // Тесты с большими числами
 TEST(FindMaxDivisibleTest, LargeNumbers) {
-    EXPECT_EQ(findMaxDivisible(7, 100), 98); // 7 * 14 = 98
-    EXPECT_EQ(findMaxDivisible(13, 200), 195); // 13 * 15 = 195
+    EXPECT_EQ(findMaxDivisible(7, 100), 98); 
+    EXPECT_EQ(findMaxDivisible(13, 200), 195);
 }
 
 // Тесты для некорректных данных
@@ -60,15 +60,11 @@ TEST(FindMaxDivisibleTest, BothZero) {
     EXPECT_EQ(findMaxDivisible(0, 0), 0);
 }
 
+// Логические тесты
 TEST(FindMaxDivisibleTest, SmallNumbers) {
-    EXPECT_EQ(findMaxDivisible(2, 1), 0); // 2 > 1
+    EXPECT_EQ(findMaxDivisible(2, 1), 0); 
+    EXPECT_EQ(findMaxDivisible(3, 2), 0); 
     EXPECT_EQ(findMaxDivisible(1, 2), 2);
     EXPECT_EQ(findMaxDivisible(2, 2), 2);
     EXPECT_EQ(findMaxDivisible(2, 3), 2);
-    EXPECT_EQ(findMaxDivisible(3, 2), 0); // 3 > 2
 }
-
-// int main(int argc, char **argv) {
-//     ::testing::InitGoogleTest(&argc, argv);
-//     return RUN_ALL_TESTS();
-// }
