@@ -95,7 +95,7 @@ rm -rf build
 ## Быстрый старт
 ```bash
 # Полный пайплайн в одной команде
-cd "/Users/klade/Desktop/UNI/LABS/OOP/2'nd_lab_Rakhimov" && \
+cd "../2'nd_lab_Rakhimov" && \
 mkdir -p build && cd build && \
 cmake .. && cmake --build . && \
 echo "=== ТЕСТЫ ===" && ./tests && \
